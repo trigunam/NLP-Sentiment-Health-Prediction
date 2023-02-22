@@ -7,14 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1rP33wYKlDcgIPKJWWY1d8Dhlq55ET9O8
 """
 
-import random
-import shutil
-import pathlib
-import os
 from keras.layers import TextVectorization
-import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras import layers
+from keras import layers
 
 from embedding import PositionalEmbedding
 from transform import TransformerEncoder
@@ -36,38 +31,18 @@ model.compile(optimizer="rmsprop",
               metrics=["accuracy"])
 model.summary()
 
-# Provide a list of files for training and testing.
-# curl - O https: // ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
-# tar - xf aclImdb_v1.tar.gz
-
-# rm - r aclImdb/train/unsup
-
-# cat aclImdb/train/pos/4077_10.txt
-
-
-base_dir = pathlib.Path("aclImdb")
-val_dir = base_dir / "val"
-train_dir = base_dir / "train"
-for category in ("noise", "critical"):
-    # os.makedirs(val_dir / category)
-    files = os.listdir(train_dir / category)
-    random.Random(1337).shuffle(files)
-    num_val_samples = int(0.2 * len(files))
-    val_files = files[-num_val_samples:]
-    for fname in val_files:
-        shutil.move(train_dir / category / fname,
-                    val_dir / category / fname)
+# files for training and testing are available in dataset folder.
 
 batch_size = 32
 
 train_ds = keras.utils.text_dataset_from_directory(
-    "aclImdb/train", batch_size=batch_size
+    "dataset/train", batch_size=batch_size
 )
 val_ds = keras.utils.text_dataset_from_directory(
-    "aclImdb/val", batch_size=batch_size
+    "dataset/val", batch_size=batch_size
 )
 test_ds = keras.utils.text_dataset_from_directory(
-    "aclImdb/test", batch_size=batch_size
+    "dataset/test", batch_size=batch_size
 )
 
 
@@ -91,8 +66,8 @@ binary_1gram_test_ds = test_ds.map(
 vocab = text_vectorization.get_vocabulary()
 
 with open("vocab.txt", 'w') as f:
-  f.write(str(vocab))
-  f.close()
+    f.write(str(vocab))
+    f.close()
 
 
 max_length = 600

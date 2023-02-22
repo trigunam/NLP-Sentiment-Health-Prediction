@@ -15,7 +15,7 @@ from keras.layers import TextVectorization
 app = flask.Flask(__name__)
 
 # load the model, and pass in the custom metric function
-model = load_model('senti.h5', custom_objects={
+model = load_model('fmc.h5', custom_objects={
                    'PositionalEmbedding': PositionalEmbedding,
                    'TransformerEncoder': TransformerEncoder})
 
@@ -27,4 +27,4 @@ max_tokens = 20000
 text_vectorization = TextVectorization(vocabulary=eval(vocab))
 
 print("Predicting accuracy in % {}".format(
-    model.predict(text_vectorization(["I first saw this back in the early 90s on UK TV"]))))
+    model.predict(text_vectorization(["Could not detect session type", "The request has succeeded", "The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information"]))))
