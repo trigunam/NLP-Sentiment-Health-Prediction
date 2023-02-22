@@ -1,0 +1,4210 @@
+questID": "07efd3cf-40a7-4d88-b442-1f42bb863b0e",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:05.894,[DEBUG],(LwDeploymentManagerImpl.java:338)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain Id in LwContext is 111
+
+20-Feb-2023 09:14:05.894,[DEBUG],(LwDeploymentManagerImpl.java:342)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+current domain for further computation is 111
+
+20-Feb-2023 09:14:05.919,[DEBUG],(LwDeploymentManagerImpl.java:385)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain hierarchy from current domain is  [111, 25769811110, 25769811108, 25769811109, 25769811106, 25769811107]
+
+20-Feb-2023 09:14:05.943,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain Id for device  10.10.47.10 is 25769811110
+
+20-Feb-2023 09:14:05.945,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain Id for device  10.10.47.29 is 25769811109
+
+20-Feb-2023 09:14:05.955,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : ac35c418-ad7d-4ad6-a749-1c54d99adb5a
+** URL: POST /audit
+{"version":"7.3.0","requestId":"ac35c418-ad7d-4ad6-a749-1c54d99adb5a","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/devices/devicerecords?filter=includeOtherAssociatedPolicies:true&limit=1000&expanded=true OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884445784"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:06.069,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : ac35c418-ad7d-4ad6-a749-1c54d99adb5a
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162611,
+  "message": "Success",
+  "requestID": "ac35c418-ad7d-4ad6-a749-1c54d99adb5a",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:06.129,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 0694d3d4-bca3-4f3c-9660-4aabe0f251d6
+** URL: POST /audit
+{"version":"7.3.0","requestId":"0694d3d4-bca3-4f3c-9660-4aabe0f251d6","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884446083"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:06.249,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 0694d3d4-bca3-4f3c-9660-4aabe0f251d6
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162612,
+  "message": "Success",
+  "requestID": "0694d3d4-bca3-4f3c-9660-4aabe0f251d6",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:09.879,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+Data not a valid JSON.
+
+20-Feb-2023 09:14:09.879,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ DC ]
+** ID : 67e17b29-43e5-409f-8557-fa41da080221
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "ef2539eab0fe11edb4ffdba9a0b5e3ec",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:09.880,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ CSM ]
+** ID : 67e17b29-43e5-409f-8557-fa41da080221
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "67e17b29-43e5-409f-8557-fa41da080221",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:14:10.347,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : 25467047-68b0-4491-bcea-dbc83570d043
+** URL: POST /audit
+{"version":"7.3.0","requestId":"25467047-68b0-4491-bcea-dbc83570d043","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884447006"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:10.459,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : 25467047-68b0-4491-bcea-dbc83570d043
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162615,
+  "message": "Success",
+  "requestID": "25467047-68b0-4491-bcea-dbc83570d043",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:10.541,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 1489a305-ef86-4023-a92a-8e0414248c2d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"1489a305-ef86-4023-a92a-8e0414248c2d","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networks?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884450481"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:10.643,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 1489a305-ef86-4023-a92a-8e0414248c2d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162616,
+  "message": "Success",
+  "requestID": "1489a305-ef86-4023-a92a-8e0414248c2d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:10.694,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 05b6479f-c4bc-49e2-a6ca-fe0d9fed7513
+** URL: POST /audit
+{"version":"7.3.0","requestId":"05b6479f-c4bc-49e2-a6ca-fe0d9fed7513","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884450657"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:10.818,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 05b6479f-c4bc-49e2-a6ca-fe0d9fed7513
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162617,
+  "message": "Success",
+  "requestID": "05b6479f-c4bc-49e2-a6ca-fe0d9fed7513",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:10.885,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 073c408a-b04f-4b85-8def-96840909f3dc
+** URL: POST /audit
+{"version":"7.3.0","requestId":"073c408a-b04f-4b85-8def-96840909f3dc","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ranges?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884450833"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:11.007,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 073c408a-b04f-4b85-8def-96840909f3dc
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162618,
+  "message": "Success",
+  "requestID": "073c408a-b04f-4b85-8def-96840909f3dc",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:11.071,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : 08528602-9fcf-4a06-aa98-77e229fe3700
+** URL: POST /audit
+{"version":"7.3.0","requestId":"08528602-9fcf-4a06-aa98-77e229fe3700","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/fqdns?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884451021"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:11.176,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : 08528602-9fcf-4a06-aa98-77e229fe3700
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162619,
+  "message": "Success",
+  "requestID": "08528602-9fcf-4a06-aa98-77e229fe3700",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:11.228,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : c4af8d22-7f3b-4f2a-85f2-9ef52f1ab9d2
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c4af8d22-7f3b-4f2a-85f2-9ef52f1ab9d2","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/hosts?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884451187"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:11.337,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : c4af8d22-7f3b-4f2a-85f2-9ef52f1ab9d2
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162620,
+  "message": "Success",
+  "requestID": "c4af8d22-7f3b-4f2a-85f2-9ef52f1ab9d2",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:11.372,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 8aeb7702-124b-4c92-a7fb-271ffbbb274f
+** URL: POST /audit
+{"version":"7.3.0","requestId":"8aeb7702-124b-4c92-a7fb-271ffbbb274f","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urls?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884451347"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:11.500,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 8aeb7702-124b-4c92-a7fb-271ffbbb274f
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162621,
+  "message": "Success",
+  "requestID": "8aeb7702-124b-4c92-a7fb-271ffbbb274f",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:11.566,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 0ff47b14-b145-4e6f-a442-27a8596d2d14
+** URL: POST /audit
+{"version":"7.3.0","requestId":"0ff47b14-b145-4e6f-a442-27a8596d2d14","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884451515"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:11.668,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 0ff47b14-b145-4e6f-a442-27a8596d2d14
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162622,
+  "message": "Success",
+  "requestID": "0ff47b14-b145-4e6f-a442-27a8596d2d14",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:15.171,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:14:15.171,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 8475e392-000d-4a59-80f9-bdde431d81b4
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "f24cd33ab0fe11edba0db6d3363f0931",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:15.171,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 8475e392-000d-4a59-80f9-bdde431d81b4
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "8475e392-000d-4a59-80f9-bdde431d81b4",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:14:15.605,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : 839a31fd-0bcd-4b49-9f22-7cf13b43a65f
+** URL: POST /audit
+{"version":"7.3.0","requestId":"839a31fd-0bcd-4b49-9f22-7cf13b43a65f","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884452594"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:15.708,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : 839a31fd-0bcd-4b49-9f22-7cf13b43a65f
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162625,
+  "message": "Success",
+  "requestID": "839a31fd-0bcd-4b49-9f22-7cf13b43a65f",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:15.750,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : b1fa7223-38e5-407f-be0c-5dd294615115
+** URL: POST /audit
+{"version":"7.3.0","requestId":"b1fa7223-38e5-407f-be0c-5dd294615115","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884455723"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:15.862,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : b1fa7223-38e5-407f-be0c-5dd294615115
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162626,
+  "message": "Success",
+  "requestID": "b1fa7223-38e5-407f-be0c-5dd294615115",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:15.912,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : a5b31f9f-7108-4db1-b7f5-0972941cf8d6
+** URL: POST /audit
+{"version":"7.3.0","requestId":"a5b31f9f-7108-4db1-b7f5-0972941cf8d6","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networkgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884455874"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:16.022,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : a5b31f9f-7108-4db1-b7f5-0972941cf8d6
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162627,
+  "message": "Success",
+  "requestID": "a5b31f9f-7108-4db1-b7f5-0972941cf8d6",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:16.054,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : f7107e2e-dbd4-459e-8e4a-7d4cf59f1531
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f7107e2e-dbd4-459e-8e4a-7d4cf59f1531","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urlgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884456034"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:16.157,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : f7107e2e-dbd4-459e-8e4a-7d4cf59f1531
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162628,
+  "message": "Success",
+  "requestID": "f7107e2e-dbd4-459e-8e4a-7d4cf59f1531",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:14:16.216,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : 1a34a867-c76e-462c-907d-63c129414f6d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"1a34a867-c76e-462c-907d-63c129414f6d","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676884456173"},"deleteList":[]}
+
+
+20-Feb-2023 09:14:16.323,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : 1a34a867-c76e-462c-907d-63c129414f6d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162629,
+  "message": "Success",
+  "requestID": "1a34a867-c76e-462c-907d-63c129414f6d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:12.226,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ DC ]
+** ID : 080d1b0e-5d83-4a52-b3df-39b8400e24ba
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:23:12.227,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ DC ]
+** ID : 080d1b0e-5d83-4a52-b3df-39b8400e24ba
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:23:12.252,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-7
+Data not a valid JSON.
+
+20-Feb-2023 09:23:12.252,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ DC ]
+** ID : 080d1b0e-5d83-4a52-b3df-39b8400e24ba
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+{
+  "version": "7.3.0",
+  "requestId": "080d1b0e-5d83-4a52-b3df-39b8400e24ba",
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:12.252,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ CSM ]
+** ID : 080d1b0e-5d83-4a52-b3df-39b8400e24ba
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+{
+  "version": "7.3.0",
+  "requestId": "080d1b0e-5d83-4a52-b3df-39b8400e24ba",
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:46.659,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:23:46.660,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 3547debd-0f1e-4bdf-9f5c-71f9f78a4101
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "46eefc0ab10011ed8842b03844d21bf5",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:46.660,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 3547debd-0f1e-4bdf-9f5c-71f9f78a4101
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "3547debd-0f1e-4bdf-9f5c-71f9f78a4101",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:47.045,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 0369af41-980c-4352-af0b-c33123d30ead
+** URL: POST /audit
+{"version":"7.3.0","requestId":"0369af41-980c-4352-af0b-c33123d30ead","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885024146"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:47.148,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 0369af41-980c-4352-af0b-c33123d30ead
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162632,
+  "message": "Success",
+  "requestID": "0369af41-980c-4352-af0b-c33123d30ead",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:47.174,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : 0e344b8c-982b-4078-9b2d-9e580d1c25ca
+** URL: GET /internal_rest_api/sysinfo
+
+20-Feb-2023 09:23:47.341,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:23:47.342,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : 0adc6636-8954-4a65-87c8-d03f23e3f9cc
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "4755fe28b10011edbafe2e6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:47.342,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ CSM ]
+** ID : 0adc6636-8954-4a65-87c8-d03f23e3f9cc
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "0adc6636-8954-4a65-87c8-d03f23e3f9cc",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:47.533,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : 0e344b8c-982b-4078-9b2d-9e580d1c25ca
+** URL: GET /internal_rest_api/sysinfo
+{
+  "code": 200,
+  "data": {
+    "Module Pack Version": "3185",
+    "OS": "Cisco Firepower Extensible Operating System (FX-OS) 2.13.0 (build192)",
+    "Rulepack Version": "2811",
+    "Snort Version": "2.9.21 (Build 102)",
+    "geoVersion": "2023-02-11-100",
+    "hostname": "firepower",
+    "lspVersion": "lsp-rel-20230215-1606",
+    "model": "Secure Firewall Management Center for VMware",
+    "platform": "66",
+    "serialNumber": "None",
+    "serverVersion": "7.3.0 (build 54)",
+    "sruVersion": "2023-02-15-001-vrt",
+    "uptime": "80 days   4:56",
+    "vdbVersion": "build 361 ( 2022-11-15 19:57:46 )"
+  },
+  "requestID": "0e344b8c-982b-4078-9b2d-9e580d1c25ca",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:47.534,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : 074ae38b-f589-4bc6-8040-25508d89e6d0
+** URL: POST /audit
+{"version":"7.3.0","requestId":"074ae38b-f589-4bc6-8040-25508d89e6d0","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/info/serverversion OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885027161"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:47.647,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : 074ae38b-f589-4bc6-8040-25508d89e6d0
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162633,
+  "message": "Success",
+  "requestID": "074ae38b-f589-4bc6-8040-25508d89e6d0",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:47.701,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : 6891cc06-e548-47fb-b564-a8ff80bfeff4
+** URL: POST /audit
+{"version":"7.3.0","requestId":"6891cc06-e548-47fb-b564-a8ff80bfeff4","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885027659"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:47.814,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : 6891cc06-e548-47fb-b564-a8ff80bfeff4
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162634,
+  "message": "Success",
+  "requestID": "6891cc06-e548-47fb-b564-a8ff80bfeff4",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:51.346,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+Data not a valid JSON.
+
+20-Feb-2023 09:23:51.347,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ DC ]
+** ID : 2bb7b1fc-4876-4712-9a6e-8397bbafab7b
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "49ba1f50b10011ed8a89c7da132b35b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:51.347,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ CSM ]
+** ID : 2bb7b1fc-4876-4712-9a6e-8397bbafab7b
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "2bb7b1fc-4876-4712-9a6e-8397bbafab7b",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:51.727,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 6e07eed2-4f11-4b50-bc42-58302b813758
+** URL: POST /audit
+{"version":"7.3.0","requestId":"6e07eed2-4f11-4b50-bc42-58302b813758","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885028508"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:51.829,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 6e07eed2-4f11-4b50-bc42-58302b813758
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162637,
+  "message": "Success",
+  "requestID": "6e07eed2-4f11-4b50-bc42-58302b813758",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:51.854,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : 07bfa1ff-08a2-4046-b996-dd7327288c64
+** URL: GET /license/smartLicenseRegActions
+
+20-Feb-2023 09:23:52.012,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+Data not a valid JSON.
+
+20-Feb-2023 09:23:52.012,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ DC ]
+** ID : 77bea206-3447-40d0-acb9-abf20fd9b0f2
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "4a1e1fbeb10011edbafe2e6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:52.013,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ CSM ]
+** ID : 77bea206-3447-40d0-acb9-abf20fd9b0f2
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "77bea206-3447-40d0-acb9-abf20fd9b0f2",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:52.239,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : 07bfa1ff-08a2-4046-b996-dd7327288c64
+** URL: GET /license/smartLicenseRegActions
+{
+  "code": 200,
+  "dataList": [
+    {
+      "metadata": {
+        "authStatus": "OUT_OF_COMPLIANCE",
+        "evalUsed": "false",
+        "exportControl": "true",
+        "lastRenewedTime": "2022-11-21T09:12:52UTC",
+        "lastSynchronizedTime": "2023-02-19T22:48:23UTC",
+        "virtualAccount": "FMC_ENG_BLR"
+      },
+      "regStatus": "REGISTERED"
+    }
+  ],
+  "requestID": "07bfa1ff-08a2-4046-b996-dd7327288c64",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:52.240,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : 4a34b81d-75d2-4026-b724-f25974e6ad13
+** URL: POST /audit
+{"version":"7.3.0","requestId":"4a34b81d-75d2-4026-b724-f25974e6ad13","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/license/smartlicenses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885031841"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:52.353,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : 4a34b81d-75d2-4026-b724-f25974e6ad13
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162638,
+  "message": "Success",
+  "requestID": "4a34b81d-75d2-4026-b724-f25974e6ad13",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:52.413,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : 644b8776-89d6-4d10-877e-cc210e2f2a1f
+** URL: POST /audit
+{"version":"7.3.0","requestId":"644b8776-89d6-4d10-877e-cc210e2f2a1f","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885032366"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:52.522,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : 644b8776-89d6-4d10-877e-cc210e2f2a1f
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162639,
+  "message": "Success",
+  "requestID": "644b8776-89d6-4d10-877e-cc210e2f2a1f",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:55.782,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+Data not a valid JSON.
+
+20-Feb-2023 09:23:55.782,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ DC ]
+** ID : 9ef44ff5-6adb-4ede-abf2-a918ebb8dc1a
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "4c5eeaf6b10011ed8bda8fa7061a5dd6",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:55.783,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ CSM ]
+** ID : 9ef44ff5-6adb-4ede-abf2-a918ebb8dc1a
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "9ef44ff5-6adb-4ede-abf2-a918ebb8dc1a",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:23:56.168,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : de65f72e-dd5e-43b6-b0d0-fc58e389e850
+** URL: POST /audit
+{"version":"7.3.0","requestId":"de65f72e-dd5e-43b6-b0d0-fc58e389e850","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885033138"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:56.299,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : de65f72e-dd5e-43b6-b0d0-fc58e389e850
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162642,
+  "message": "Success",
+  "requestID": "de65f72e-dd5e-43b6-b0d0-fc58e389e850",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:56.360,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : 8b0a6d0d-8929-46fb-816e-1a92b9d73102
+** URL: POST /audit
+{"version":"7.3.0","requestId":"8b0a6d0d-8929-46fb-816e-1a92b9d73102","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885036312"},"deleteList":[]}
+
+
+20-Feb-2023 09:23:56.468,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : 8b0a6d0d-8929-46fb-816e-1a92b9d73102
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162643,
+  "message": "Success",
+  "requestID": "8b0a6d0d-8929-46fb-816e-1a92b9d73102",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:59.642,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:23:59.642,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : 21e12844-c95b-4238-997d-1bfe26005706
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "4eac16bcb10011ed9191fc32070a475a",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:23:59.643,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ CSM ]
+** ID : 21e12844-c95b-4238-997d-1bfe26005706
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "21e12844-c95b-4238-997d-1bfe26005706",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:24:00.022,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : 44c41723-119c-46a3-98ec-0f5847b8a878
+** URL: POST /audit
+{"version":"7.3.0","requestId":"44c41723-119c-46a3-98ec-0f5847b8a878","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885037128"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:00.144,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : 44c41723-119c-46a3-98ec-0f5847b8a878
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162646,
+  "message": "Success",
+  "requestID": "44c41723-119c-46a3-98ec-0f5847b8a878",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:00.181,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : e8d0b01e-dba2-4094-b4ab-7ca372cbeb5c
+** URL: GET /fmcha
+
+20-Feb-2023 09:24:00.313,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : e8d0b01e-dba2-4094-b4ab-7ca372cbeb5c
+** URL: GET /fmcha
+{
+  "code": 200,
+  "dataList": {
+    "pendingDevices": [
+      {
+        "active": 1,
+        "domain_uuid": "âv«ìàò\u0011ãimÔb_",
+        "ip": "10.10.47.10",
+        "ip_extn": "",
+        "last_changed": 1673864122,
+        "mgmt_mac_address": "00:50:56:8A:A8:D8",
+        "model_id": "A",
+        "model_number": "75",
+        "name": "10.10.47.10",
+        "persistent": 0,
+        "primary_mgr": 1,
+        "priority": 0,
+        "reg_key": "7d4edf68-673b-11ed-b75b-f041006e3aa1",
+        "reg_state": 0,
+        "role": 2,
+        "sw_version": "7.2.0",
+        "upgrade_version": "",
+        "uuid": "7d4edf68-673b-11ed-b75b-f041006e3aa1",
+        "uuid_gw": "",
+        "vip": "",
+        "vip_local": ""
+      },
+      {
+        "active": 1,
+        "domain_uuid": "âv«ìàò\u0011ãimÔb_",
+        "ip": "10.10.47.29",
+        "ip_extn": "",
+        "last_changed": 1673864063,
+        "mgmt_mac_address": "00:50:56:8A:4F:D3",
+        "model_id": "A",
+        "model_number": "75",
+        "name": "10.10.47.29",
+        "persistent": 0,
+        "primary_mgr": 1,
+        "priority": 0,
+        "reg_key": "32ee1692-697e-11ed-9e74-872644ba7027",
+        "reg_state": 0,
+        "role": 2,
+        "sw_version": "7.3.0",
+        "upgrade_version": "",
+        "uuid": "32ee1692-697e-11ed-9e74-872644ba7027",
+        "uuid_gw": "",
+        "vip": "",
+        "vip_local": ""
+      }
+    ]
+  },
+  "requestID": "e8d0b01e-dba2-4094-b4ab-7ca372cbeb5c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:00.313,[ERROR],(DefenseCenterServiceImpl.java:4587)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+{pendingDevices=[{active=1.0, domain_uuid=âv«ìàòãimÔb_, ip=10.10.47.10, ip_extn=, last_changed=1.673864122E9, mgmt_mac_address=00:50:56:8A:A8:D8, model_id=A, model_number=75, name=10.10.47.10, persistent=0.0, primary_mgr=1.0, priority=0.0, reg_key=7d4edf68-673b-11ed-b75b-f041006e3aa1, reg_state=0.0, role=2.0, sw_version=7.2.0, upgrade_version=, uuid=7d4edf68-673b-11ed-b75b-f041006e3aa1, uuid_gw=, vip=, vip_local=, vnet=null}, {active=1.0, domain_uuid=âv«ìàòãimÔb_, ip=10.10.47.29, ip_extn=, last_changed=1.673864063E9, mgmt_mac_address=00:50:56:8A:4F:D3, model_id=A, model_number=75, name=10.10.47.29, persistent=0.0, primary_mgr=1.0, priority=0.0, reg_key=32ee1692-697e-11ed-9e74-872644ba7027, reg_state=0.0, role=2.0, sw_version=7.3.0, upgrade_version=, uuid=32ee1692-697e-11ed-9e74-872644ba7027, uuid_gw=, vip=, vip_local=, vnet=null}]}
+
+20-Feb-2023 09:24:00.314,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : f503e27a-3424-4253-9ec8-6639dc9631cb
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f503e27a-3424-4253-9ec8-6639dc9631cb","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/integration/fmchastatuses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885040160"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:00.429,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : f503e27a-3424-4253-9ec8-6639dc9631cb
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162647,
+  "message": "Success",
+  "requestID": "f503e27a-3424-4253-9ec8-6639dc9631cb",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:00.487,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : af18129a-3b8b-4cf8-854b-a8779bd0e1fa
+** URL: POST /audit
+{"version":"7.3.0","requestId":"af18129a-3b8b-4cf8-854b-a8779bd0e1fa","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885040442"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:00.592,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : af18129a-3b8b-4cf8-854b-a8779bd0e1fa
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162648,
+  "message": "Success",
+  "requestID": "af18129a-3b8b-4cf8-854b-a8779bd0e1fa",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:04.165,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:24:04.166,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 27777c86-7858-4c3b-8801-acec4b96c439
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "515e40f6b10011ed896288ba45c17b60",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:04.166,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 27777c86-7858-4c3b-8801-acec4b96c439
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "27777c86-7858-4c3b-8801-acec4b96c439",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:24:04.635,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 5236df21-b3e2-46f6-8fd6-c25384b28b41
+** URL: POST /audit
+{"version":"7.3.0","requestId":"5236df21-b3e2-46f6-8fd6-c25384b28b41","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885041228"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:04.762,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 5236df21-b3e2-46f6-8fd6-c25384b28b41
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162651,
+  "message": "Success",
+  "requestID": "5236df21-b3e2-46f6-8fd6-c25384b28b41",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:04.874,[DEBUG],(LwDeploymentManagerImpl.java:338)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-1
+The domain Id in LwContext is 111
+
+20-Feb-2023 09:24:04.875,[DEBUG],(LwDeploymentManagerImpl.java:342)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-1
+current domain for further computation is 111
+
+20-Feb-2023 09:24:04.906,[DEBUG],(LwDeploymentManagerImpl.java:385)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-1
+The domain hierarchy from current domain is  [111, 25769811110, 25769811108, 25769811109, 25769811106, 25769811107]
+
+20-Feb-2023 09:24:04.941,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-1
+The domain Id for device  10.10.47.10 is 25769811110
+
+20-Feb-2023 09:24:04.944,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-1
+The domain Id for device  10.10.47.29 is 25769811109
+
+20-Feb-2023 09:24:04.948,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : d8ebcb9d-1fd2-4707-b257-2787d5fd956c
+** URL: POST /audit
+{"version":"7.3.0","requestId":"d8ebcb9d-1fd2-4707-b257-2787d5fd956c","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/devices/devicerecords?filter=includeOtherAssociatedPolicies:true&limit=1000&expanded=true OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885044779"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:05.085,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : d8ebcb9d-1fd2-4707-b257-2787d5fd956c
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162652,
+  "message": "Success",
+  "requestID": "d8ebcb9d-1fd2-4707-b257-2787d5fd956c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:05.173,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : 4fd9b8f6-b449-4e5b-9228-d3e8d51e5380
+** URL: POST /audit
+{"version":"7.3.0","requestId":"4fd9b8f6-b449-4e5b-9228-d3e8d51e5380","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885045101"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:05.332,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : 4fd9b8f6-b449-4e5b-9228-d3e8d51e5380
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162653,
+  "message": "Success",
+  "requestID": "4fd9b8f6-b449-4e5b-9228-d3e8d51e5380",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:09.160,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+Data not a valid JSON.
+
+20-Feb-2023 09:24:09.160,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ DC ]
+** ID : 43b69212-7f61-40fb-9f45-6f8d02cc1e29
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "54582740b10011edb5f9d11b0947146a",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:09.161,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ CSM ]
+** ID : 43b69212-7f61-40fb-9f45-6f8d02cc1e29
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "43b69212-7f61-40fb-9f45-6f8d02cc1e29",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:24:09.618,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : 8a583a18-330b-4695-8833-49be83403fc2
+** URL: POST /audit
+{"version":"7.3.0","requestId":"8a583a18-330b-4695-8833-49be83403fc2","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885046311"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:09.730,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : 8a583a18-330b-4695-8833-49be83403fc2
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162656,
+  "message": "Success",
+  "requestID": "8a583a18-330b-4695-8833-49be83403fc2",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:09.804,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : 37f43196-bcc2-4fd9-a8b7-434ae765271d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"37f43196-bcc2-4fd9-a8b7-434ae765271d","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networks?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885049743"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:09.927,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : 37f43196-bcc2-4fd9-a8b7-434ae765271d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162657,
+  "message": "Success",
+  "requestID": "37f43196-bcc2-4fd9-a8b7-434ae765271d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:09.973,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : d5c87da0-79bb-48d0-9a8a-4120b44e16cf
+** URL: POST /audit
+{"version":"7.3.0","requestId":"d5c87da0-79bb-48d0-9a8a-4120b44e16cf","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885049939"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:10.112,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : d5c87da0-79bb-48d0-9a8a-4120b44e16cf
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162658,
+  "message": "Success",
+  "requestID": "d5c87da0-79bb-48d0-9a8a-4120b44e16cf",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:10.174,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : f1eed703-8f85-4a57-9dc7-b41a8fc08057
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f1eed703-8f85-4a57-9dc7-b41a8fc08057","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ranges?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885050125"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:10.319,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : f1eed703-8f85-4a57-9dc7-b41a8fc08057
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162659,
+  "message": "Success",
+  "requestID": "f1eed703-8f85-4a57-9dc7-b41a8fc08057",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:10.406,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : f942cdfb-18ba-4c80-b816-7f6cb8e0c5cc
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f942cdfb-18ba-4c80-b816-7f6cb8e0c5cc","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/fqdns?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885050340"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:10.536,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : f942cdfb-18ba-4c80-b816-7f6cb8e0c5cc
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162660,
+  "message": "Success",
+  "requestID": "f942cdfb-18ba-4c80-b816-7f6cb8e0c5cc",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:10.604,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : 9c6c1021-8c0d-483d-b9b2-eee3d13ac789
+** URL: POST /audit
+{"version":"7.3.0","requestId":"9c6c1021-8c0d-483d-b9b2-eee3d13ac789","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/hosts?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885050549"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:10.735,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : 9c6c1021-8c0d-483d-b9b2-eee3d13ac789
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162661,
+  "message": "Success",
+  "requestID": "9c6c1021-8c0d-483d-b9b2-eee3d13ac789",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:10.783,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 030f321d-2db0-44b4-a62c-4ebbd61cfccd
+** URL: POST /audit
+{"version":"7.3.0","requestId":"030f321d-2db0-44b4-a62c-4ebbd61cfccd","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urls?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885050750"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:10.908,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 030f321d-2db0-44b4-a62c-4ebbd61cfccd
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162662,
+  "message": "Success",
+  "requestID": "030f321d-2db0-44b4-a62c-4ebbd61cfccd",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:10.985,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 870fd7ca-0c31-4a31-893c-2afc9375ff15
+** URL: POST /audit
+{"version":"7.3.0","requestId":"870fd7ca-0c31-4a31-893c-2afc9375ff15","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885050924"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:11.110,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 870fd7ca-0c31-4a31-893c-2afc9375ff15
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162663,
+  "message": "Success",
+  "requestID": "870fd7ca-0c31-4a31-893c-2afc9375ff15",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:14.713,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:24:14.714,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : 08d87708-ba7f-4885-b9b3-804a568fa942
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "57a7a95cb10011ed8a05fae52fcea97e",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:14.714,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ CSM ]
+** ID : 08d87708-ba7f-4885-b9b3-804a568fa942
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "08d87708-ba7f-4885-b9b3-804a568fa942",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:24:15.143,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : c8adc1ce-60e3-4303-8355-98e29f8ccff9
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c8adc1ce-60e3-4303-8355-98e29f8ccff9","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885052033"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:15.238,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : c8adc1ce-60e3-4303-8355-98e29f8ccff9
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162666,
+  "message": "Success",
+  "requestID": "c8adc1ce-60e3-4303-8355-98e29f8ccff9",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:15.284,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : 692d622a-18b9-43e8-8578-7f68c06f40a8
+** URL: POST /audit
+{"version":"7.3.0","requestId":"692d622a-18b9-43e8-8578-7f68c06f40a8","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885055261"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:15.394,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : 692d622a-18b9-43e8-8578-7f68c06f40a8
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162667,
+  "message": "Success",
+  "requestID": "692d622a-18b9-43e8-8578-7f68c06f40a8",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:15.445,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : c8fa76d3-18fb-4a38-9b6c-42fd7a670ffb
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c8fa76d3-18fb-4a38-9b6c-42fd7a670ffb","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networkgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885055407"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:15.554,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : c8fa76d3-18fb-4a38-9b6c-42fd7a670ffb
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162668,
+  "message": "Success",
+  "requestID": "c8fa76d3-18fb-4a38-9b6c-42fd7a670ffb",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:15.589,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : 40091035-7909-458b-b98a-a45128521c05
+** URL: POST /audit
+{"version":"7.3.0","requestId":"40091035-7909-458b-b98a-a45128521c05","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urlgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885055565"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:15.710,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : 40091035-7909-458b-b98a-a45128521c05
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162669,
+  "message": "Success",
+  "requestID": "40091035-7909-458b-b98a-a45128521c05",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:24:15.758,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 276291b3-7359-47e8-a1a2-c21b16a4ca17
+** URL: POST /audit
+{"version":"7.3.0","requestId":"276291b3-7359-47e8-a1a2-c21b16a4ca17","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885055722"},"deleteList":[]}
+
+
+20-Feb-2023 09:24:15.862,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 276291b3-7359-47e8-a1a2-c21b16a4ca17
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162670,
+  "message": "Success",
+  "requestID": "276291b3-7359-47e8-a1a2-c21b16a4ca17",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:30.497,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ DC ]
+** ID : be77e065-529a-467d-b139-45e829c00f4b
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:33:30.498,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ DC ]
+** ID : be77e065-529a-467d-b139-45e829c00f4b
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:33:30.512,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-5
+Data not a valid JSON.
+
+20-Feb-2023 09:33:30.513,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ DC ]
+** ID : be77e065-529a-467d-b139-45e829c00f4b
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+{
+  "version": "7.3.0",
+  "requestId": "be77e065-529a-467d-b139-45e829c00f4b",
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:30.513,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ CSM ]
+** ID : be77e065-529a-467d-b139-45e829c00f4b
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+{
+  "version": "7.3.0",
+  "requestId": "be77e065-529a-467d-b139-45e829c00f4b",
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:46.731,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:33:46.732,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : ec73aee4-c761-47b7-b5ec-b1fae5871061
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "ac9af382b10111ed93d0f2ebe7ba6bd8",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:46.732,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ CSM ]
+** ID : ec73aee4-c761-47b7-b5ec-b1fae5871061
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "ec73aee4-c761-47b7-b5ec-b1fae5871061",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:47.103,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 613acecb-71fa-42bf-b785-b1d48c5e289c
+** URL: POST /audit
+{"version":"7.3.0","requestId":"613acecb-71fa-42bf-b785-b1d48c5e289c","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885624277"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:47.212,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 613acecb-71fa-42bf-b785-b1d48c5e289c
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162673,
+  "message": "Success",
+  "requestID": "613acecb-71fa-42bf-b785-b1d48c5e289c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:47.240,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : 7ddb8bdc-cf8a-4e63-8c4d-95ea7865b734
+** URL: GET /internal_rest_api/sysinfo
+
+20-Feb-2023 09:33:47.388,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:33:47.388,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : a82d46e1-49cd-4e5f-9af1-68bfdf7ed1fc
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "acfd2444b10111eda16a2b6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:47.389,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : a82d46e1-49cd-4e5f-9af1-68bfdf7ed1fc
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "a82d46e1-49cd-4e5f-9af1-68bfdf7ed1fc",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:47.549,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : 7ddb8bdc-cf8a-4e63-8c4d-95ea7865b734
+** URL: GET /internal_rest_api/sysinfo
+{
+  "code": 200,
+  "data": {
+    "Module Pack Version": "3185",
+    "OS": "Cisco Firepower Extensible Operating System (FX-OS) 2.13.0 (build192)",
+    "Rulepack Version": "2811",
+    "Snort Version": "2.9.21 (Build 102)",
+    "geoVersion": "2023-02-11-100",
+    "hostname": "firepower",
+    "lspVersion": "lsp-rel-20230215-1606",
+    "model": "Secure Firewall Management Center for VMware",
+    "platform": "66",
+    "serialNumber": "None",
+    "serverVersion": "7.3.0 (build 54)",
+    "sruVersion": "2023-02-15-001-vrt",
+    "uptime": "80 days   5:06",
+    "vdbVersion": "build 361 ( 2022-11-15 19:57:46 )"
+  },
+  "requestID": "7ddb8bdc-cf8a-4e63-8c4d-95ea7865b734",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:47.550,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : d6c349df-95ab-4c43-b3bf-2e8bc2111a90
+** URL: POST /audit
+{"version":"7.3.0","requestId":"d6c349df-95ab-4c43-b3bf-2e8bc2111a90","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/info/serverversion OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885627227"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:47.644,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : d6c349df-95ab-4c43-b3bf-2e8bc2111a90
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162674,
+  "message": "Success",
+  "requestID": "d6c349df-95ab-4c43-b3bf-2e8bc2111a90",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:47.692,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : c26b76ad-6220-4081-87aa-b1a8477a0f91
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c26b76ad-6220-4081-87aa-b1a8477a0f91","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885627655"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:47.770,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : c26b76ad-6220-4081-87aa-b1a8477a0f91
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162675,
+  "message": "Success",
+  "requestID": "c26b76ad-6220-4081-87aa-b1a8477a0f91",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:50.899,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+Data not a valid JSON.
+
+20-Feb-2023 09:33:50.899,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ DC ]
+** ID : c3bb1d09-8cbf-40b4-9538-c6107ad1adcf
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "af16b2a4b10111edb4defb1e5710ff1b",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:50.899,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ CSM ]
+** ID : c3bb1d09-8cbf-40b4-9538-c6107ad1adcf
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "c3bb1d09-8cbf-40b4-9538-c6107ad1adcf",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:51.272,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ CSM ]
+** ID : 40d22a75-143b-4ac3-859e-836a9187ebe7
+** URL: POST /audit
+{"version":"7.3.0","requestId":"40d22a75-143b-4ac3-859e-836a9187ebe7","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885628508"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:51.364,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ DC ]
+** ID : 40d22a75-143b-4ac3-859e-836a9187ebe7
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162678,
+  "message": "Success",
+  "requestID": "40d22a75-143b-4ac3-859e-836a9187ebe7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:51.389,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : c298db7b-2b66-438c-baff-f710fe255ce0
+** URL: GET /license/smartLicenseRegActions
+
+20-Feb-2023 09:33:51.533,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+Data not a valid JSON.
+
+20-Feb-2023 09:33:51.533,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ DC ]
+** ID : 5813ba7f-762c-4d4a-81dc-91affd9f9747
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "af75ee90b10111eda16a2b6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:51.534,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ CSM ]
+** ID : 5813ba7f-762c-4d4a-81dc-91affd9f9747
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "5813ba7f-762c-4d4a-81dc-91affd9f9747",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:51.730,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : c298db7b-2b66-438c-baff-f710fe255ce0
+** URL: GET /license/smartLicenseRegActions
+{
+  "code": 200,
+  "dataList": [
+    {
+      "metadata": {
+        "authStatus": "OUT_OF_COMPLIANCE",
+        "evalUsed": "false",
+        "exportControl": "true",
+        "lastRenewedTime": "2022-11-21T09:12:52UTC",
+        "lastSynchronizedTime": "2023-02-19T22:48:23UTC",
+        "virtualAccount": "FMC_ENG_BLR"
+      },
+      "regStatus": "REGISTERED"
+    }
+  ],
+  "requestID": "c298db7b-2b66-438c-baff-f710fe255ce0",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:51.731,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : f0ad0b05-b907-4069-a1fe-e2fb114d1b4c
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f0ad0b05-b907-4069-a1fe-e2fb114d1b4c","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/license/smartlicenses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885631376"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:51.817,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : f0ad0b05-b907-4069-a1fe-e2fb114d1b4c
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162679,
+  "message": "Success",
+  "requestID": "f0ad0b05-b907-4069-a1fe-e2fb114d1b4c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:51.864,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : ae3611a6-79aa-4409-b1e4-b4e68b72ea01
+** URL: POST /audit
+{"version":"7.3.0","requestId":"ae3611a6-79aa-4409-b1e4-b4e68b72ea01","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885631829"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:51.956,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : ae3611a6-79aa-4409-b1e4-b4e68b72ea01
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162680,
+  "message": "Success",
+  "requestID": "ae3611a6-79aa-4409-b1e4-b4e68b72ea01",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:55.145,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-10
+Data not a valid JSON.
+
+20-Feb-2023 09:33:55.146,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ DC ]
+** ID : 68b485ee-9f29-4971-9772-9f27a5e95d59
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "b19ea96eb10111ed9256b2e92140a94e",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:55.146,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ CSM ]
+** ID : 68b485ee-9f29-4971-9772-9f27a5e95d59
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "68b485ee-9f29-4971-9772-9f27a5e95d59",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:55.561,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : a76be627-7fcc-4e49-b910-5cb29881777b
+** URL: POST /audit
+{"version":"7.3.0","requestId":"a76be627-7fcc-4e49-b910-5cb29881777b","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885632620"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:55.670,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : a76be627-7fcc-4e49-b910-5cb29881777b
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162683,
+  "message": "Success",
+  "requestID": "a76be627-7fcc-4e49-b910-5cb29881777b",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:55.716,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : 8093c8e4-556b-47c9-b3e1-9163b9f82be1
+** URL: POST /audit
+{"version":"7.3.0","requestId":"8093c8e4-556b-47c9-b3e1-9163b9f82be1","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885635682"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:55.806,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : 8093c8e4-556b-47c9-b3e1-9163b9f82be1
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162684,
+  "message": "Success",
+  "requestID": "8093c8e4-556b-47c9-b3e1-9163b9f82be1",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:58.956,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:33:58.957,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 883e4b5c-ed00-4516-93a0-88d1ad3dd870
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "b3e41326b10111ed9720909ccc47e7f8",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:58.957,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 883e4b5c-ed00-4516-93a0-88d1ad3dd870
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "883e4b5c-ed00-4516-93a0-88d1ad3dd870",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:33:59.350,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : cad068ee-5928-420a-b1bb-16a5f29809b4
+** URL: POST /audit
+{"version":"7.3.0","requestId":"cad068ee-5928-420a-b1bb-16a5f29809b4","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885636526"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:59.433,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : cad068ee-5928-420a-b1bb-16a5f29809b4
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162687,
+  "message": "Success",
+  "requestID": "cad068ee-5928-420a-b1bb-16a5f29809b4",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:59.461,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 15168f3d-7143-47de-9168-2d2bf944ed83
+** URL: GET /fmcha
+
+20-Feb-2023 09:33:59.551,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 15168f3d-7143-47de-9168-2d2bf944ed83
+** URL: GET /fmcha
+{
+  "code": 200,
+  "dataList": {
+    "pendingDevices": [
+      {
+        "active": 1,
+        "domain_uuid": "âv«ìàò\u0011ãimÔb_",
+        "ip": "10.10.47.10",
+        "ip_extn": "",
+        "last_changed": 1673864122,
+        "mgmt_mac_address": "00:50:56:8A:A8:D8",
+        "model_id": "A",
+        "model_number": "75",
+        "name": "10.10.47.10",
+        "persistent": 0,
+        "primary_mgr": 1,
+        "priority": 0,
+        "reg_key": "7d4edf68-673b-11ed-b75b-f041006e3aa1",
+        "reg_state": 0,
+        "role": 2,
+        "sw_version": "7.2.0",
+        "upgrade_version": "",
+        "uuid": "7d4edf68-673b-11ed-b75b-f041006e3aa1",
+        "uuid_gw": "",
+        "vip": "",
+        "vip_local": ""
+      },
+      {
+        "active": 1,
+        "domain_uuid": "âv«ìàò\u0011ãimÔb_",
+        "ip": "10.10.47.29",
+        "ip_extn": "",
+        "last_changed": 1673864063,
+        "mgmt_mac_address": "00:50:56:8A:4F:D3",
+        "model_id": "A",
+        "model_number": "75",
+        "name": "10.10.47.29",
+        "persistent": 0,
+        "primary_mgr": 1,
+        "priority": 0,
+        "reg_key": "32ee1692-697e-11ed-9e74-872644ba7027",
+        "reg_state": 0,
+        "role": 2,
+        "sw_version": "7.3.0",
+        "upgrade_version": "",
+        "uuid": "32ee1692-697e-11ed-9e74-872644ba7027",
+        "uuid_gw": "",
+        "vip": "",
+        "vip_local": ""
+      }
+    ]
+  },
+  "requestID": "15168f3d-7143-47de-9168-2d2bf944ed83",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:59.552,[ERROR],(DefenseCenterServiceImpl.java:4587)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+{pendingDevices=[{active=1.0, domain_uuid=âv«ìàòãimÔb_, ip=10.10.47.10, ip_extn=, last_changed=1.673864122E9, mgmt_mac_address=00:50:56:8A:A8:D8, model_id=A, model_number=75, name=10.10.47.10, persistent=0.0, primary_mgr=1.0, priority=0.0, reg_key=7d4edf68-673b-11ed-b75b-f041006e3aa1, reg_state=0.0, role=2.0, sw_version=7.2.0, upgrade_version=, uuid=7d4edf68-673b-11ed-b75b-f041006e3aa1, uuid_gw=, vip=, vip_local=, vnet=null}, {active=1.0, domain_uuid=âv«ìàòãimÔb_, ip=10.10.47.29, ip_extn=, last_changed=1.673864063E9, mgmt_mac_address=00:50:56:8A:4F:D3, model_id=A, model_number=75, name=10.10.47.29, persistent=0.0, primary_mgr=1.0, priority=0.0, reg_key=32ee1692-697e-11ed-9e74-872644ba7027, reg_state=0.0, role=2.0, sw_version=7.3.0, upgrade_version=, uuid=32ee1692-697e-11ed-9e74-872644ba7027, uuid_gw=, vip=, vip_local=, vnet=null}]}
+
+20-Feb-2023 09:33:59.552,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : fde1d0d7-d60e-411f-b338-165cc85c49eb
+** URL: POST /audit
+{"version":"7.3.0","requestId":"fde1d0d7-d60e-411f-b338-165cc85c49eb","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/integration/fmchastatuses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885639443"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:59.641,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : fde1d0d7-d60e-411f-b338-165cc85c49eb
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162688,
+  "message": "Success",
+  "requestID": "fde1d0d7-d60e-411f-b338-165cc85c49eb",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:33:59.689,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : d81139f4-bae8-44b4-85b6-838bbbae1cab
+** URL: POST /audit
+{"version":"7.3.0","requestId":"d81139f4-bae8-44b4-85b6-838bbbae1cab","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885639652"},"deleteList":[]}
+
+
+20-Feb-2023 09:33:59.785,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : d81139f4-bae8-44b4-85b6-838bbbae1cab
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162689,
+  "message": "Success",
+  "requestID": "d81139f4-bae8-44b4-85b6-838bbbae1cab",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:03.004,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:34:03.005,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : 07a26a8a-3e1f-4a36-a5e3-f5c75b184939
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "b64da190b10111edb5d5c2e6af93e6bc",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:03.005,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ CSM ]
+** ID : 07a26a8a-3e1f-4a36-a5e3-f5c75b184939
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "07a26a8a-3e1f-4a36-a5e3-f5c75b184939",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:34:03.466,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : b9e18907-6b7c-440e-a40f-fdecbc9acb58
+** URL: POST /audit
+{"version":"7.3.0","requestId":"b9e18907-6b7c-440e-a40f-fdecbc9acb58","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885640285"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:03.596,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : b9e18907-6b7c-440e-a40f-fdecbc9acb58
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162692,
+  "message": "Success",
+  "requestID": "b9e18907-6b7c-440e-a40f-fdecbc9acb58",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:03.706,[DEBUG],(LwDeploymentManagerImpl.java:338)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain Id in LwContext is 111
+
+20-Feb-2023 09:34:03.707,[DEBUG],(LwDeploymentManagerImpl.java:342)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+current domain for further computation is 111
+
+20-Feb-2023 09:34:03.732,[DEBUG],(LwDeploymentManagerImpl.java:385)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain hierarchy from current domain is  [111, 25769811110, 25769811108, 25769811109, 25769811106, 25769811107]
+
+20-Feb-2023 09:34:03.760,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain Id for device  10.10.47.10 is 25769811110
+
+20-Feb-2023 09:34:03.763,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-3
+The domain Id for device  10.10.47.29 is 25769811109
+
+20-Feb-2023 09:34:03.769,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 3d3d280c-d011-4d8e-a8d1-0da38f3cdddd
+** URL: POST /audit
+{"version":"7.3.0","requestId":"3d3d280c-d011-4d8e-a8d1-0da38f3cdddd","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/devices/devicerecords?filter=includeOtherAssociatedPolicies:true&limit=1000&expanded=true OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885643612"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:03.878,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 3d3d280c-d011-4d8e-a8d1-0da38f3cdddd
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162693,
+  "message": "Success",
+  "requestID": "3d3d280c-d011-4d8e-a8d1-0da38f3cdddd",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:03.942,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 802ad1f2-7ec6-4627-a483-8d5ddf04c442
+** URL: POST /audit
+{"version":"7.3.0","requestId":"802ad1f2-7ec6-4627-a483-8d5ddf04c442","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885643893"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:04.073,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 802ad1f2-7ec6-4627-a483-8d5ddf04c442
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162694,
+  "message": "Success",
+  "requestID": "802ad1f2-7ec6-4627-a483-8d5ddf04c442",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:07.966,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+Data not a valid JSON.
+
+20-Feb-2023 09:34:07.967,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ DC ]
+** ID : 7b054b0f-ae6b-4805-bd21-f6538a56d335
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "b942aaa8b10111ed8b6992d1d92ba364",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:07.967,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ CSM ]
+** ID : 7b054b0f-ae6b-4805-bd21-f6538a56d335
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "7b054b0f-ae6b-4805-bd21-f6538a56d335",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:34:08.391,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : aae55ef0-8fd9-4de3-8644-350d2d6742a2
+** URL: POST /audit
+{"version":"7.3.0","requestId":"aae55ef0-8fd9-4de3-8644-350d2d6742a2","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885644894"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:08.491,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : aae55ef0-8fd9-4de3-8644-350d2d6742a2
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162697,
+  "message": "Success",
+  "requestID": "aae55ef0-8fd9-4de3-8644-350d2d6742a2",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:08.555,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 2ec8008f-21b2-4001-a5c2-f7488607354b
+** URL: POST /audit
+{"version":"7.3.0","requestId":"2ec8008f-21b2-4001-a5c2-f7488607354b","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networks?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885648511"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:08.649,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 2ec8008f-21b2-4001-a5c2-f7488607354b
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162698,
+  "message": "Success",
+  "requestID": "2ec8008f-21b2-4001-a5c2-f7488607354b",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:08.698,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : a5d4d213-a04a-4fb9-8b3f-d1526873ce98
+** URL: POST /audit
+{"version":"7.3.0","requestId":"a5d4d213-a04a-4fb9-8b3f-d1526873ce98","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885648661"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:08.788,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : a5d4d213-a04a-4fb9-8b3f-d1526873ce98
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162699,
+  "message": "Success",
+  "requestID": "a5d4d213-a04a-4fb9-8b3f-d1526873ce98",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:08.835,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 97d7c75f-3233-4afa-8af8-a78ffc48240d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"97d7c75f-3233-4afa-8af8-a78ffc48240d","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ranges?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885648800"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:08.924,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 97d7c75f-3233-4afa-8af8-a78ffc48240d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162700,
+  "message": "Success",
+  "requestID": "97d7c75f-3233-4afa-8af8-a78ffc48240d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:08.968,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : 10467ffa-87ad-4e5e-9e60-dc87cc737d7d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"10467ffa-87ad-4e5e-9e60-dc87cc737d7d","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/fqdns?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885648935"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:09.072,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : 10467ffa-87ad-4e5e-9e60-dc87cc737d7d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162701,
+  "message": "Success",
+  "requestID": "10467ffa-87ad-4e5e-9e60-dc87cc737d7d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:09.128,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 7bba83cf-59f5-4517-a93b-622e7d272991
+** URL: POST /audit
+{"version":"7.3.0","requestId":"7bba83cf-59f5-4517-a93b-622e7d272991","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/hosts?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885649083"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:09.234,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 7bba83cf-59f5-4517-a93b-622e7d272991
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162702,
+  "message": "Success",
+  "requestID": "7bba83cf-59f5-4517-a93b-622e7d272991",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:09.273,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 4ff35aff-8f7d-40a1-a518-e4588aa42865
+** URL: POST /audit
+{"version":"7.3.0","requestId":"4ff35aff-8f7d-40a1-a518-e4588aa42865","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urls?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885649244"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:09.364,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 4ff35aff-8f7d-40a1-a518-e4588aa42865
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162703,
+  "message": "Success",
+  "requestID": "4ff35aff-8f7d-40a1-a518-e4588aa42865",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:09.416,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : a186c6c0-d25b-46a5-9399-9e1a88624f2e
+** URL: POST /audit
+{"version":"7.3.0","requestId":"a186c6c0-d25b-46a5-9399-9e1a88624f2e","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885649377"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:09.507,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : a186c6c0-d25b-46a5-9399-9e1a88624f2e
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162704,
+  "message": "Success",
+  "requestID": "a186c6c0-d25b-46a5-9399-9e1a88624f2e",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:13.828,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:34:13.829,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 7d1b9ba2-ce5d-43c3-847d-1eca66451dfb
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "bcc18938b10111ed8d6dc8dc38ba14ae",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:13.829,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 7d1b9ba2-ce5d-43c3-847d-1eca66451dfb
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "7d1b9ba2-ce5d-43c3-847d-1eca66451dfb",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:34:14.251,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : ff9dbcdb-3efe-46a1-8622-d566b37e2751
+** URL: POST /audit
+{"version":"7.3.0","requestId":"ff9dbcdb-3efe-46a1-8622-d566b37e2751","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885651294"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:14.355,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : ff9dbcdb-3efe-46a1-8622-d566b37e2751
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162707,
+  "message": "Success",
+  "requestID": "ff9dbcdb-3efe-46a1-8622-d566b37e2751",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:14.393,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 2a856a58-4115-4ccb-9e51-6241079ecb32
+** URL: POST /audit
+{"version":"7.3.0","requestId":"2a856a58-4115-4ccb-9e51-6241079ecb32","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885654368"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:14.485,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 2a856a58-4115-4ccb-9e51-6241079ecb32
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162708,
+  "message": "Success",
+  "requestID": "2a856a58-4115-4ccb-9e51-6241079ecb32",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:14.546,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : f6d2cf4c-5367-46dc-89f9-48883e0ef300
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f6d2cf4c-5367-46dc-89f9-48883e0ef300","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networkgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885654496"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:14.637,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : f6d2cf4c-5367-46dc-89f9-48883e0ef300
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162709,
+  "message": "Success",
+  "requestID": "f6d2cf4c-5367-46dc-89f9-48883e0ef300",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:14.667,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : c576df5a-1e66-4f57-973f-52df79dfa7d7
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c576df5a-1e66-4f57-973f-52df79dfa7d7","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urlgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885654649"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:14.756,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : c576df5a-1e66-4f57-973f-52df79dfa7d7
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162710,
+  "message": "Success",
+  "requestID": "c576df5a-1e66-4f57-973f-52df79dfa7d7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:34:14.802,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : 0df798b0-db41-4dac-a093-21cfee2433d4
+** URL: POST /audit
+{"version":"7.3.0","requestId":"0df798b0-db41-4dac-a093-21cfee2433d4","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676885654766"},"deleteList":[]}
+
+
+20-Feb-2023 09:34:14.899,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : 0df798b0-db41-4dac-a093-21cfee2433d4
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162711,
+  "message": "Success",
+  "requestID": "0df798b0-db41-4dac-a093-21cfee2433d4",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:47.251,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+Data not a valid JSON.
+
+20-Feb-2023 09:43:47.251,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ DC ]
+** ID : 407fddc9-2796-4ecc-b4b4-08bad623cf7d
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "128ab316b10311ed93ffe39447baa8c1",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:47.251,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ CSM ]
+** ID : 407fddc9-2796-4ecc-b4b4-08bad623cf7d
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "407fddc9-2796-4ecc-b4b4-08bad623cf7d",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:47.655,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 2d502b84-91be-45f2-ab4b-b812c11c8573
+** URL: POST /audit
+{"version":"7.3.0","requestId":"2d502b84-91be-45f2-ab4b-b812c11c8573","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886224642"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:47.777,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 2d502b84-91be-45f2-ab4b-b812c11c8573
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162714,
+  "message": "Success",
+  "requestID": "2d502b84-91be-45f2-ab4b-b812c11c8573",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:47.807,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : a8554dba-5d6a-4afe-8084-0d962a586c3c
+** URL: GET /internal_rest_api/sysinfo
+
+20-Feb-2023 09:43:47.976,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+Data not a valid JSON.
+
+20-Feb-2023 09:43:47.976,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ DC ]
+** ID : 22e04cfe-33dd-413b-8d11-bfa90d7f5c45
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "12f756e2b10311eda0ef2c6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:47.977,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ CSM ]
+** ID : 22e04cfe-33dd-413b-8d11-bfa90d7f5c45
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "22e04cfe-33dd-413b-8d11-bfa90d7f5c45",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:48.165,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : a8554dba-5d6a-4afe-8084-0d962a586c3c
+** URL: GET /internal_rest_api/sysinfo
+{
+  "code": 200,
+  "data": {
+    "Module Pack Version": "3185",
+    "OS": "Cisco Firepower Extensible Operating System (FX-OS) 2.13.0 (build192)",
+    "Rulepack Version": "2811",
+    "Snort Version": "2.9.21 (Build 102)",
+    "geoVersion": "2023-02-11-100",
+    "hostname": "firepower",
+    "lspVersion": "lsp-rel-20230215-1606",
+    "model": "Secure Firewall Management Center for VMware",
+    "platform": "66",
+    "serialNumber": "None",
+    "serverVersion": "7.3.0 (build 54)",
+    "sruVersion": "2023-02-15-001-vrt",
+    "uptime": "80 days   5:16",
+    "vdbVersion": "build 361 ( 2022-11-15 19:57:46 )"
+  },
+  "requestID": "a8554dba-5d6a-4afe-8084-0d962a586c3c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:48.166,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : c1e225d2-9c10-4b6e-8926-84e7cb9a9a1c
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c1e225d2-9c10-4b6e-8926-84e7cb9a9a1c","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/info/serverversion OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886227792"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:48.259,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : c1e225d2-9c10-4b6e-8926-84e7cb9a9a1c
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162715,
+  "message": "Success",
+  "requestID": "c1e225d2-9c10-4b6e-8926-84e7cb9a9a1c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:48.321,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 4460c5c8-9292-4739-ab73-378db2beb41e
+** URL: POST /audit
+{"version":"7.3.0","requestId":"4460c5c8-9292-4739-ab73-378db2beb41e","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886228278"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:48.424,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 4460c5c8-9292-4739-ab73-378db2beb41e
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162716,
+  "message": "Success",
+  "requestID": "4460c5c8-9292-4739-ab73-378db2beb41e",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:48.989,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ DC ]
+** ID : ad5d2c08-ce44-4ca1-9dd8-93962f42a7b5
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:43:48.989,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ DC ]
+** ID : ad5d2c08-ce44-4ca1-9dd8-93962f42a7b5
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:43:49.006,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-2
+Data not a valid JSON.
+
+20-Feb-2023 09:43:49.007,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ DC ]
+** ID : ad5d2c08-ce44-4ca1-9dd8-93962f42a7b5
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+{
+  "version": "7.3.0",
+  "requestId": "ad5d2c08-ce44-4ca1-9dd8-93962f42a7b5",
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:49.007,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ CSM ]
+** ID : ad5d2c08-ce44-4ca1-9dd8-93962f42a7b5
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+{
+  "version": "7.3.0",
+  "requestId": "ad5d2c08-ce44-4ca1-9dd8-93962f42a7b5",
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:51.626,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+Data not a valid JSON.
+
+20-Feb-2023 09:43:51.626,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ DC ]
+** ID : c5f90448-f47f-4292-8c0d-fc5d7239493a
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "15265feeb10311ed9963f2fc81be3aca",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:51.626,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ CSM ]
+** ID : c5f90448-f47f-4292-8c0d-fc5d7239493a
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "c5f90448-f47f-4292-8c0d-fc5d7239493a",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:52.022,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : 2fec49ab-8f4b-47fd-8b36-73960ad259d1
+** URL: POST /audit
+{"version":"7.3.0","requestId":"2fec49ab-8f4b-47fd-8b36-73960ad259d1","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886229030"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:52.126,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : 2fec49ab-8f4b-47fd-8b36-73960ad259d1
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162719,
+  "message": "Success",
+  "requestID": "2fec49ab-8f4b-47fd-8b36-73960ad259d1",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:52.159,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : f1c5547b-ba27-4f56-9d13-fafe0ae58615
+** URL: GET /license/smartLicenseRegActions
+
+20-Feb-2023 09:43:52.333,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:43:52.333,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 0c749517-8659-4c97-8724-572c93c3342c
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "159027eeb10311eda0ef2c6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:52.334,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 0c749517-8659-4c97-8724-572c93c3342c
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "0c749517-8659-4c97-8724-572c93c3342c",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:52.560,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : f1c5547b-ba27-4f56-9d13-fafe0ae58615
+** URL: GET /license/smartLicenseRegActions
+{
+  "code": 200,
+  "dataList": [
+    {
+      "metadata": {
+        "authStatus": "OUT_OF_COMPLIANCE",
+        "evalUsed": "false",
+        "exportControl": "true",
+        "lastRenewedTime": "2022-11-21T09:12:52UTC",
+        "lastSynchronizedTime": "2023-02-19T22:48:23UTC",
+        "virtualAccount": "FMC_ENG_BLR"
+      },
+      "regStatus": "REGISTERED"
+    }
+  ],
+  "requestID": "f1c5547b-ba27-4f56-9d13-fafe0ae58615",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:52.560,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : a750ac6c-8a88-4b22-a4a0-4a0fbf18abdf
+** URL: POST /audit
+{"version":"7.3.0","requestId":"a750ac6c-8a88-4b22-a4a0-4a0fbf18abdf","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/license/smartlicenses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886232140"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:52.660,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : a750ac6c-8a88-4b22-a4a0-4a0fbf18abdf
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162720,
+  "message": "Success",
+  "requestID": "a750ac6c-8a88-4b22-a4a0-4a0fbf18abdf",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:52.709,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : 7ede89af-8b76-4cc1-8685-f226a4696ba2
+** URL: POST /audit
+{"version":"7.3.0","requestId":"7ede89af-8b76-4cc1-8685-f226a4696ba2","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886232672"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:52.812,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : 7ede89af-8b76-4cc1-8685-f226a4696ba2
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162721,
+  "message": "Success",
+  "requestID": "7ede89af-8b76-4cc1-8685-f226a4696ba2",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:56.068,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+Data not a valid JSON.
+
+20-Feb-2023 09:43:56.068,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ DC ]
+** ID : b75c385f-d775-4ed5-bdc1-5e98fbbbbbe6
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "17cc3264b10311ed9f0f954ef73d92ca",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:56.069,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ CSM ]
+** ID : b75c385f-d775-4ed5-bdc1-5e98fbbbbbe6
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "b75c385f-d775-4ed5-bdc1-5e98fbbbbbe6",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:43:56.483,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 6afa1ac7-0d3c-417e-9ce7-ebc8611618c2
+** URL: POST /audit
+{"version":"7.3.0","requestId":"6afa1ac7-0d3c-417e-9ce7-ebc8611618c2","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886233375"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:56.603,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 6afa1ac7-0d3c-417e-9ce7-ebc8611618c2
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162724,
+  "message": "Success",
+  "requestID": "6afa1ac7-0d3c-417e-9ce7-ebc8611618c2",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:43:56.682,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : ef38ea57-0efe-4df6-837b-fe7521796464
+** URL: POST /audit
+{"version":"7.3.0","requestId":"ef38ea57-0efe-4df6-837b-fe7521796464","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886236619"},"deleteList":[]}
+
+
+20-Feb-2023 09:43:56.790,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : ef38ea57-0efe-4df6-837b-fe7521796464
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162725,
+  "message": "Success",
+  "requestID": "ef38ea57-0efe-4df6-837b-fe7521796464",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:00.134,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-1
+Data not a valid JSON.
+
+20-Feb-2023 09:44:00.135,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ DC ]
+** ID : 60cfa8a6-31fd-4527-b812-e79f63a50053
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "1a388476b10311eda3c5ea232aafc3c3",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:00.135,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ CSM ]
+** ID : 60cfa8a6-31fd-4527-b812-e79f63a50053
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "60cfa8a6-31fd-4527-b812-e79f63a50053",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:44:00.611,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : aa4180a4-99f3-4d1c-a7b5-4e4f4f953cb4
+** URL: POST /audit
+{"version":"7.3.0","requestId":"aa4180a4-99f3-4d1c-a7b5-4e4f4f953cb4","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886237503"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:00.711,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : aa4180a4-99f3-4d1c-a7b5-4e4f4f953cb4
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162728,
+  "message": "Success",
+  "requestID": "aa4180a4-99f3-4d1c-a7b5-4e4f4f953cb4",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:00.748,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : 1015b44a-9bf0-493a-a4b0-aeffb51ab153
+** URL: GET /fmcha
+
+20-Feb-2023 09:44:00.880,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : 1015b44a-9bf0-493a-a4b0-aeffb51ab153
+** URL: GET /fmcha
+{
+  "code": 200,
+  "dataList": {
+    "pendingDevices": [
+      {
+        "active": 1,
+        "domain_uuid": "âv«ìàò\u0011ãimÔb_",
+        "ip": "10.10.47.10",
+        "ip_extn": "",
+        "last_changed": 1673864122,
+        "mgmt_mac_address": "00:50:56:8A:A8:D8",
+        "model_id": "A",
+        "model_number": "75",
+        "name": "10.10.47.10",
+        "persistent": 0,
+        "primary_mgr": 1,
+        "priority": 0,
+        "reg_key": "7d4edf68-673b-11ed-b75b-f041006e3aa1",
+        "reg_state": 0,
+        "role": 2,
+        "sw_version": "7.2.0",
+        "upgrade_version": "",
+        "uuid": "7d4edf68-673b-11ed-b75b-f041006e3aa1",
+        "uuid_gw": "",
+        "vip": "",
+        "vip_local": ""
+      },
+      {
+        "active": 1,
+        "domain_uuid": "âv«ìàò\u0011ãimÔb_",
+        "ip": "10.10.47.29",
+        "ip_extn": "",
+        "last_changed": 1673864063,
+        "mgmt_mac_address": "00:50:56:8A:4F:D3",
+        "model_id": "A",
+        "model_number": "75",
+        "name": "10.10.47.29",
+        "persistent": 0,
+        "primary_mgr": 1,
+        "priority": 0,
+        "reg_key": "32ee1692-697e-11ed-9e74-872644ba7027",
+        "reg_state": 0,
+        "role": 2,
+        "sw_version": "7.3.0",
+        "upgrade_version": "",
+        "uuid": "32ee1692-697e-11ed-9e74-872644ba7027",
+        "uuid_gw": "",
+        "vip": "",
+        "vip_local": ""
+      }
+    ]
+  },
+  "requestID": "1015b44a-9bf0-493a-a4b0-aeffb51ab153",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:00.881,[ERROR],(DefenseCenterServiceImpl.java:4587)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+{pendingDevices=[{active=1.0, domain_uuid=âv«ìàòãimÔb_, ip=10.10.47.10, ip_extn=, last_changed=1.673864122E9, mgmt_mac_address=00:50:56:8A:A8:D8, model_id=A, model_number=75, name=10.10.47.10, persistent=0.0, primary_mgr=1.0, priority=0.0, reg_key=7d4edf68-673b-11ed-b75b-f041006e3aa1, reg_state=0.0, role=2.0, sw_version=7.2.0, upgrade_version=, uuid=7d4edf68-673b-11ed-b75b-f041006e3aa1, uuid_gw=, vip=, vip_local=, vnet=null}, {active=1.0, domain_uuid=âv«ìàòãimÔb_, ip=10.10.47.29, ip_extn=, last_changed=1.673864063E9, mgmt_mac_address=00:50:56:8A:4F:D3, model_id=A, model_number=75, name=10.10.47.29, persistent=0.0, primary_mgr=1.0, priority=0.0, reg_key=32ee1692-697e-11ed-9e74-872644ba7027, reg_state=0.0, role=2.0, sw_version=7.3.0, upgrade_version=, uuid=32ee1692-697e-11ed-9e74-872644ba7027, uuid_gw=, vip=, vip_local=, vnet=null}]}
+
+20-Feb-2023 09:44:00.881,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : 06294b04-c771-4ab9-b72f-4287b4dbe20c
+** URL: POST /audit
+{"version":"7.3.0","requestId":"06294b04-c771-4ab9-b72f-4287b4dbe20c","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/integration/fmchastatuses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886240724"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:00.985,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : 06294b04-c771-4ab9-b72f-4287b4dbe20c
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162729,
+  "message": "Success",
+  "requestID": "06294b04-c771-4ab9-b72f-4287b4dbe20c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:01.060,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 71668e87-c002-4bfb-8997-f658d8eff715
+** URL: POST /audit
+{"version":"7.3.0","requestId":"71668e87-c002-4bfb-8997-f658d8eff715","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886241000"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:01.192,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 71668e87-c002-4bfb-8997-f658d8eff715
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162730,
+  "message": "Success",
+  "requestID": "71668e87-c002-4bfb-8997-f658d8eff715",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:05.306,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+Data not a valid JSON.
+
+20-Feb-2023 09:44:05.307,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ DC ]
+** ID : 8f7e35aa-25d0-4731-b9c1-753eef048b34
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "1d4d3710b10311edb6d899596c679cd5",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:05.307,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ CSM ]
+** ID : 8f7e35aa-25d0-4731-b9c1-753eef048b34
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "8f7e35aa-25d0-4731-b9c1-753eef048b34",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:44:05.903,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 2dc75570-c351-4c15-a6f0-b1d6a65bdcff
+** URL: POST /audit
+{"version":"7.3.0","requestId":"2dc75570-c351-4c15-a6f0-b1d6a65bdcff","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886241896"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:06.062,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 2dc75570-c351-4c15-a6f0-b1d6a65bdcff
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162733,
+  "message": "Success",
+  "requestID": "2dc75570-c351-4c15-a6f0-b1d6a65bdcff",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:06.211,[DEBUG],(LwDeploymentManagerImpl.java:338)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-9
+The domain Id in LwContext is 111
+
+20-Feb-2023 09:44:06.211,[DEBUG],(LwDeploymentManagerImpl.java:342)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-9
+current domain for further computation is 111
+
+20-Feb-2023 09:44:06.243,[DEBUG],(LwDeploymentManagerImpl.java:385)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-9
+The domain hierarchy from current domain is  [111, 25769811110, 25769811108, 25769811109, 25769811106, 25769811107]
+
+20-Feb-2023 09:44:06.282,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-9
+The domain Id for device  10.10.47.10 is 25769811110
+
+20-Feb-2023 09:44:06.285,[DEBUG],(LwDeploymentManagerImpl.java:462)
+com.cisco.nm.vms.api.deployment.LwDeploymentManagerImpl, ajp-nio-127.0.0.1-9009-exec-9
+The domain Id for device  10.10.47.29 is 25769811109
+
+20-Feb-2023 09:44:06.290,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : 8b2ded9f-b64d-4091-ac75-3349f914fce4
+** URL: POST /audit
+{"version":"7.3.0","requestId":"8b2ded9f-b64d-4091-ac75-3349f914fce4","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/devices/devicerecords?filter=includeOtherAssociatedPolicies:true&limit=1000&expanded=true OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886246078"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:06.421,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : 8b2ded9f-b64d-4091-ac75-3349f914fce4
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162734,
+  "message": "Success",
+  "requestID": "8b2ded9f-b64d-4091-ac75-3349f914fce4",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:06.523,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : f541a659-c6ee-411e-9cb1-7f2637ee68cd
+** URL: POST /audit
+{"version":"7.3.0","requestId":"f541a659-c6ee-411e-9cb1-7f2637ee68cd","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886246437"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:06.658,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : f541a659-c6ee-411e-9cb1-7f2637ee68cd
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162735,
+  "message": "Success",
+  "requestID": "f541a659-c6ee-411e-9cb1-7f2637ee68cd",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:10.358,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+Data not a valid JSON.
+
+20-Feb-2023 09:44:10.359,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ DC ]
+** ID : 22ba7be4-031e-4c40-81b3-9959dddb17d3
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "20505b54b10311ed92cfa744bfe4b075",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:10.360,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ CSM ]
+** ID : 22ba7be4-031e-4c40-81b3-9959dddb17d3
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "22ba7be4-031e-4c40-81b3-9959dddb17d3",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:44:10.804,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 6fe110e9-c789-4358-8184-220b77d77d4d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"6fe110e9-c789-4358-8184-220b77d77d4d","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886247437"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:10.920,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 6fe110e9-c789-4358-8184-220b77d77d4d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162738,
+  "message": "Success",
+  "requestID": "6fe110e9-c789-4358-8184-220b77d77d4d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.003,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : 12f14301-447e-45dd-ba11-8648788a41df
+** URL: POST /audit
+{"version":"7.3.0","requestId":"12f14301-447e-45dd-ba11-8648788a41df","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networks?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886250935"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:11.125,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : 12f14301-447e-45dd-ba11-8648788a41df
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162739,
+  "message": "Success",
+  "requestID": "12f14301-447e-45dd-ba11-8648788a41df",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.175,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : e755a888-6ab8-410f-a79a-07b62bf8384f
+** URL: POST /audit
+{"version":"7.3.0","requestId":"e755a888-6ab8-410f-a79a-07b62bf8384f","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ports?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886251136"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:11.276,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : e755a888-6ab8-410f-a79a-07b62bf8384f
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162740,
+  "message": "Success",
+  "requestID": "e755a888-6ab8-410f-a79a-07b62bf8384f",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.326,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 55cd50ad-9a03-41b0-9c28-db177370fcd0
+** URL: POST /audit
+{"version":"7.3.0","requestId":"55cd50ad-9a03-41b0-9c28-db177370fcd0","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/ranges?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886251288"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:11.423,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 55cd50ad-9a03-41b0-9c28-db177370fcd0
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162741,
+  "message": "Success",
+  "requestID": "55cd50ad-9a03-41b0-9c28-db177370fcd0",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.474,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ CSM ]
+** ID : 7cad0774-9166-4a8d-8378-348c4301151b
+** URL: POST /audit
+{"version":"7.3.0","requestId":"7cad0774-9166-4a8d-8378-348c4301151b","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/fqdns?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886251433"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:11.582,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ DC ]
+** ID : 7cad0774-9166-4a8d-8378-348c4301151b
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162742,
+  "message": "Success",
+  "requestID": "7cad0774-9166-4a8d-8378-348c4301151b",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.633,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : b0060750-da27-46c8-af3f-7d567628dd52
+** URL: POST /audit
+{"version":"7.3.0","requestId":"b0060750-da27-46c8-af3f-7d567628dd52","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/hosts?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886251592"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:11.747,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : b0060750-da27-46c8-af3f-7d567628dd52
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162743,
+  "message": "Success",
+  "requestID": "b0060750-da27-46c8-af3f-7d567628dd52",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.785,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : de0b36a4-2be5-4c4b-9eb3-ed87d16ba5aa
+** URL: POST /audit
+{"version":"7.3.0","requestId":"de0b36a4-2be5-4c4b-9eb3-ed87d16ba5aa","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urls?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886251758"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:11.900,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : de0b36a4-2be5-4c4b-9eb3-ed87d16ba5aa
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162744,
+  "message": "Success",
+  "requestID": "de0b36a4-2be5-4c4b-9eb3-ed87d16ba5aa",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:11.967,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : a3f731ac-26de-4b4f-8fe7-f31b7f1e5b5c
+** URL: POST /audit
+{"version":"7.3.0","requestId":"a3f731ac-26de-4b4f-8fe7-f31b7f1e5b5c","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886251916"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:12.064,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : a3f731ac-26de-4b4f-8fe7-f31b7f1e5b5c
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162745,
+  "message": "Success",
+  "requestID": "a3f731ac-26de-4b4f-8fe7-f31b7f1e5b5c",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:15.746,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-1
+Data not a valid JSON.
+
+20-Feb-2023 09:44:15.746,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-1
+** REST Request [ DC ]
+** ID : 30d090b0-d8e8-4e8b-bef9-b4ab99a57468
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "2386b430b10311eda1f0eb5dbb33e341",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:15.747,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-1
+** REST Response [ CSM ]
+** ID : 30d090b0-d8e8-4e8b-bef9-b4ab99a57468
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "30d090b0-d8e8-4e8b-bef9-b4ab99a57468",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:44:16.157,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 95afdf57-25e9-47c8-9f2b-fbbb409fe40f
+** URL: POST /audit
+{"version":"7.3.0","requestId":"95afdf57-25e9-47c8-9f2b-fbbb409fe40f","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886253117"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:16.258,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 95afdf57-25e9-47c8-9f2b-fbbb409fe40f
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162748,
+  "message": "Success",
+  "requestID": "95afdf57-25e9-47c8-9f2b-fbbb409fe40f",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:16.313,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : ecc1f049-c2cf-4757-b632-2ccff0eb384e
+** URL: POST /audit
+{"version":"7.3.0","requestId":"ecc1f049-c2cf-4757-b632-2ccff0eb384e","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/portobjectgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886256282"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:16.414,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : ecc1f049-c2cf-4757-b632-2ccff0eb384e
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162749,
+  "message": "Success",
+  "requestID": "ecc1f049-c2cf-4757-b632-2ccff0eb384e",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:16.464,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : 1fde9c49-cd8f-47cf-bcfa-55c5a30eda49
+** URL: POST /audit
+{"version":"7.3.0","requestId":"1fde9c49-cd8f-47cf-bcfa-55c5a30eda49","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/networkgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886256425"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:16.568,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : 1fde9c49-cd8f-47cf-bcfa-55c5a30eda49
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162750,
+  "message": "Success",
+  "requestID": "1fde9c49-cd8f-47cf-bcfa-55c5a30eda49",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:16.605,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : 5cf367f3-2fd0-4224-befc-9414454ba9f4
+** URL: POST /audit
+{"version":"7.3.0","requestId":"5cf367f3-2fd0-4224-befc-9414454ba9f4","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_config/v1/domain/e276abec-e0f2-11e3-8169-6d9ed49b625f/object/urlgroups?expanded=true&offset=0&limit=500 OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886256581"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:16.706,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : 5cf367f3-2fd0-4224-befc-9414454ba9f4
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162751,
+  "message": "Success",
+  "requestID": "5cf367f3-2fd0-4224-befc-9414454ba9f4",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:44:16.757,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Request [ CSM ]
+** ID : 7398a542-aa6e-4f7f-8a01-767c892e0843
+** URL: POST /audit
+{"version":"7.3.0","requestId":"7398a542-aa6e-4f7f-8a01-767c892e0843","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886256717"},"deleteList":[]}
+
+
+20-Feb-2023 09:44:16.867,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-10
+** REST Response [ DC ]
+** ID : 7398a542-aa6e-4f7f-8a01-767c892e0843
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162752,
+  "message": "Success",
+  "requestID": "7398a542-aa6e-4f7f-8a01-767c892e0843",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:46.941,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+Data not a valid JSON.
+
+20-Feb-2023 09:53:46.942,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ DC ]
+** ID : 737e3d32-93c5-4e99-9494-a0d5559f5027
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "77fc6c16b10411ed83c4f21249b39b4d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:46.942,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ CSM ]
+** ID : 737e3d32-93c5-4e99-9494-a0d5559f5027
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "737e3d32-93c5-4e99-9494-a0d5559f5027",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:53:47.340,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Request [ CSM ]
+** ID : b6be90d8-9fca-4f17-8162-bbd64c35c913
+** URL: POST /audit
+{"version":"7.3.0","requestId":"b6be90d8-9fca-4f17-8162-bbd64c35c913","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886824196"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:47.462,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-7
+** REST Response [ DC ]
+** ID : b6be90d8-9fca-4f17-8162-bbd64c35c913
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162755,
+  "message": "Success",
+  "requestID": "b6be90d8-9fca-4f17-8162-bbd64c35c913",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:47.488,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 352555b3-cbd7-4146-9cd0-c74a5dfba631
+** URL: GET /internal_rest_api/sysinfo
+
+20-Feb-2023 09:53:47.647,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+Data not a valid JSON.
+
+20-Feb-2023 09:53:47.647,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ DC ]
+** ID : 2560fe87-00f9-43b2-80e7-f4257abf4336
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "78658318b10411edbafe2e6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:47.648,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ CSM ]
+** ID : 2560fe87-00f9-43b2-80e7-f4257abf4336
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "2560fe87-00f9-43b2-80e7-f4257abf4336",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:53:47.856,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 352555b3-cbd7-4146-9cd0-c74a5dfba631
+** URL: GET /internal_rest_api/sysinfo
+{
+  "code": 200,
+  "data": {
+    "Module Pack Version": "3185",
+    "OS": "Cisco Firepower Extensible Operating System (FX-OS) 2.13.0 (build192)",
+    "Rulepack Version": "2811",
+    "Snort Version": "2.9.21 (Build 102)",
+    "geoVersion": "2023-02-11-100",
+    "hostname": "firepower",
+    "lspVersion": "lsp-rel-20230215-1606",
+    "model": "Secure Firewall Management Center for VMware",
+    "platform": "66",
+    "serialNumber": "None",
+    "serverVersion": "7.3.0 (build 54)",
+    "sruVersion": "2023-02-15-001-vrt",
+    "uptime": "80 days   5:26",
+    "vdbVersion": "build 361 ( 2022-11-15 19:57:46 )"
+  },
+  "requestID": "352555b3-cbd7-4146-9cd0-c74a5dfba631",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:47.857,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : c020d1b1-3e44-438e-8a2c-622a303f1f56
+** URL: POST /audit
+{"version":"7.3.0","requestId":"c020d1b1-3e44-438e-8a2c-622a303f1f56","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/info/serverversion OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886827476"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:47.955,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : c020d1b1-3e44-438e-8a2c-622a303f1f56
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162756,
+  "message": "Success",
+  "requestID": "c020d1b1-3e44-438e-8a2c-622a303f1f56",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:48.007,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Request [ CSM ]
+** ID : ab9113d0-00ec-4013-88f4-434b848a5c3b
+** URL: POST /audit
+{"version":"7.3.0","requestId":"ab9113d0-00ec-4013-88f4-434b848a5c3b","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886827967"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:48.127,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-5
+** REST Response [ DC ]
+** ID : ab9113d0-00ec-4013-88f4-434b848a5c3b
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162757,
+  "message": "Success",
+  "requestID": "ab9113d0-00ec-4013-88f4-434b848a5c3b",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:51.236,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:53:51.237,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : bea16278-98ef-492b-b38e-b2a73070f59e
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "7a8bb39cb10411eda96ced74549bf086",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:51.237,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ CSM ]
+** ID : bea16278-98ef-492b-b38e-b2a73070f59e
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "bea16278-98ef-492b-b38e-b2a73070f59e",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:53:51.638,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Request [ CSM ]
+** ID : 6ec45bfd-a4f3-4eef-ac03-bc77b835dc6d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"6ec45bfd-a4f3-4eef-ac03-bc77b835dc6d","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886828733"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:51.743,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-8
+** REST Response [ DC ]
+** ID : 6ec45bfd-a4f3-4eef-ac03-bc77b835dc6d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162760,
+  "message": "Success",
+  "requestID": "6ec45bfd-a4f3-4eef-ac03-bc77b835dc6d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:51.769,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : bce28bf8-9a27-4563-a93e-118d78764419
+** URL: GET /license/smartLicenseRegActions
+
+20-Feb-2023 09:53:51.920,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-3
+Data not a valid JSON.
+
+20-Feb-2023 09:53:51.920,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ DC ]
+** ID : 0469fdd1-28a8-45e8-8f95-acb32f5de867
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "7af2d004b10411edbafe2e6746d608b7",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:51.921,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ CSM ]
+** ID : 0469fdd1-28a8-45e8-8f95-acb32f5de867
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "0469fdd1-28a8-45e8-8f95-acb32f5de867",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:53:52.135,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : bce28bf8-9a27-4563-a93e-118d78764419
+** URL: GET /license/smartLicenseRegActions
+{
+  "code": 200,
+  "dataList": [
+    {
+      "metadata": {
+        "authStatus": "OUT_OF_COMPLIANCE",
+        "evalUsed": "false",
+        "exportControl": "true",
+        "lastRenewedTime": "2022-11-21T09:12:52UTC",
+        "lastSynchronizedTime": "2023-02-19T22:48:23UTC",
+        "virtualAccount": "FMC_ENG_BLR"
+      },
+      "regStatus": "REGISTERED"
+    }
+  ],
+  "requestID": "bce28bf8-9a27-4563-a93e-118d78764419",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:52.136,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Request [ CSM ]
+** ID : 8fa3e61f-cbb8-475a-83e2-8a9eb14f8676
+** URL: POST /audit
+{"version":"7.3.0","requestId":"8fa3e61f-cbb8-475a-83e2-8a9eb14f8676","data":{"userName":"admin","subsystem":"API","message":"GET https://10.10.47.7/api/fmc_platform/v1/license/smartlicenses OK (200) - The request has succeeded","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886831756"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:52.228,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-4
+** REST Response [ DC ]
+** ID : 8fa3e61f-cbb8-475a-83e2-8a9eb14f8676
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162761,
+  "message": "Success",
+  "requestID": "8fa3e61f-cbb8-475a-83e2-8a9eb14f8676",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:52.271,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ CSM ]
+** ID : 400ba05b-7020-46ed-adb3-342557c12786
+** URL: POST /audit
+{"version":"7.3.0","requestId":"400ba05b-7020-46ed-adb3-342557c12786","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886832240"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:52.379,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-9
+** REST Response [ DC ]
+** ID : 400ba05b-7020-46ed-adb3-342557c12786
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162762,
+  "message": "Success",
+  "requestID": "400ba05b-7020-46ed-adb3-342557c12786",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:55.610,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+Data not a valid JSON.
+
+20-Feb-2023 09:53:55.610,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Request [ DC ]
+** ID : 9c8c236c-2b2d-4cfe-8953-8bd61deed55f
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "data": {
+    "domainEntry": {
+      "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f"
+    }
+  },
+  "requestID": "7d27052ab10411ed9b17af425c940796",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:55.611,[INFO],(JsonRESTServerResource.java:136)
+com.cisco.nm.vms.api.rest.SaveDomainChangesServerResource, ajp-nio-127.0.0.1-9009-exec-2
+** REST Response [ CSM ]
+** ID : 9c8c236c-2b2d-4cfe-8953-8bd61deed55f
+** URL: PUT https://localhost6/csm/api/domainChange/setCurrentDomain
+{
+  "version": "7.3.0",
+  "requestId": "9c8c236c-2b2d-4cfe-8953-8bd61deed55f",
+  "data": {
+    "uuid": "e276abec-e0f2-11e3-8169-6d9ed49b625f",
+    "literal": false
+  },
+  "deleteList": []
+}
+
+
+20-Feb-2023 09:53:55.974,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Request [ CSM ]
+** ID : 53ac4c5f-fed8-4e55-b639-4b40c7e5645d
+** URL: POST /audit
+{"version":"7.3.0","requestId":"53ac4c5f-fed8-4e55-b639-4b40c7e5645d","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/generatetoken No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886833007"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:56.079,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-6
+** REST Response [ DC ]
+** ID : 53ac4c5f-fed8-4e55-b639-4b40c7e5645d
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162765,
+  "message": "Success",
+  "requestID": "53ac4c5f-fed8-4e55-b639-4b40c7e5645d",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:56.125,[INFO],(DefenseCenterServiceImpl.java:1551)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Request [ CSM ]
+** ID : 533c2750-c9cb-4bda-97f3-4679cd3e1a26
+** URL: POST /audit
+{"version":"7.3.0","requestId":"533c2750-c9cb-4bda-97f3-4679cd3e1a26","data":{"userName":"admin","subsystem":"API","message":"POST https://10.10.47.7/api/fmc_platform/v1/auth/revokeaccess No Content (204) - The server has fulfilled the request but does not need to return an entity-body, and might want to return updated meta-information","sourceIP":"10.10.47.16","domainUuid":"e276abec-e0f2-11e3-8169-6d9ed49b625f","time":"1676886836091"},"deleteList":[]}
+
+
+20-Feb-2023 09:53:56.221,[INFO],(DefenseCenterServiceImpl.java:1603)
+com.cisco.nm.vms.api.dc.DefenseCenterServiceImpl, ajp-nio-127.0.0.1-9009-exec-3
+** REST Response [ DC ]
+** ID : 533c2750-c9cb-4bda-97f3-4679cd3e1a26
+** URL: POST /audit
+{
+  "code": 200,
+  "id": 162766,
+  "message": "Success",
+  "requestID": "533c2750-c9cb-4bda-97f3-4679cd3e1a26",
+  "version": "6.0.1"
+}
+
+
+20-Feb-2023 09:53:58.326,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : cfdb0ffd-efe0-4b21-a2da-45178511232b
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:53:58.327,[INFO],(JsonRESTServerResource.java:111)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-9
+** REST Request [ DC ]
+** ID : cfdb0ffd-efe0-4b21-a2da-45178511232b
+** URL: GET https://localhost6/csm/api/devicesStatus/toBeCleaned
+
+20-Feb-2023 09:53:58.344,[INFO],(JsonRESTServerResource.java:107)
+com.cisco.nm.vms.api.rest.DeviceCleanupServerResource, ajp-nio-127.0.0.1-9009-exec-9
+Data not a valid JSON.
+
+20-Feb-2023 09:53:58.
