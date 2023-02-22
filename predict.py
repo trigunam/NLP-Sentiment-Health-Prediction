@@ -9,13 +9,7 @@ from keras.models import load_model
 from embedding import PositionalEmbedding
 from transform import TransformerEncoder
 
-max_length = 600
-max_tokens = 20000
-text_vectorization = layers.TextVectorization(
-    max_tokens=max_tokens,
-    output_mode="int",
-    output_sequence_length=max_length,
-)
+from keras.layers import TextVectorization
 
 # instantiate flask
 app = flask.Flask(__name__)
@@ -25,12 +19,12 @@ model = load_model('senti.h5', custom_objects={
                    'PositionalEmbedding': PositionalEmbedding,
                    'TransformerEncoder': TransformerEncoder})
 
-i1 = 19999
-i2 = 18999
-i3 = 12999
-i4 = text_vectorization("some text")
+with open('vocab.txt') as f:
+    vocab = f.read()
+    f.close()
 
-x = pd.DataFrame.from_dict(
-    {'error': [i1, i2, i3, i4]}, orient='index').transpose()
-print("Predicting accuracy for {} in % {}".format(
-    [i1, i2, i3, i4], model.predict(x)))
+max_tokens = 20000
+text_vectorization = TextVectorization(vocabulary=eval(vocab))
+
+print("Predicting accuracy in % {}".format(
+    model.predict(text_vectorization(["I first saw this back in the early 90s on UK TV"]))))
