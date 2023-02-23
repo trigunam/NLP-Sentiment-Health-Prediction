@@ -30,7 +30,7 @@ load_vectorizer.set_weights(from_disk['weights'])
 
 def get_gpt_response(logs):
     # https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
-    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed on your device, our systems predict that FMC-1 might fail, unless a corrective action is taken. For more details contact TAC support.'
+    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed, our systems predict that FMC-1 might fail, unless a corrective action is taken. For more details contact TAC support.'
 
 def predict_log_data():
     threshold = 0.999998
