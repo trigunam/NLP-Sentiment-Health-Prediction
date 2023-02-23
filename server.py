@@ -30,7 +30,7 @@ def getGPTResponseData(logs):
     return '🚨Alert!! Based on the recent health checkup, the Cd-FMC is having trouble connecting to other devices, '
 
 def executePrediction():
-    threshold = 0.7
+    threshold = 0.999998
     logs = getDeviceLogs()
     # load the model, and pass in the custom metric function
     model = load_model('senti.h5', custom_objects={
