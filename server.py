@@ -10,11 +10,15 @@ from datetime import datetime
 
 from embedding import PositionalEmbedding
 from transform import TransformerEncoder
+import os
+import openai
 
 app = flask.Flask(__name__)
 # define a predict function as an endpoint
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route("/predict", methods=["GET"])
 @cross_origin()
@@ -28,10 +32,22 @@ load_vectorizer = TextVectorization.from_config(from_disk['config'])
 load_vectorizer.adapt(tf.data.Dataset.from_tensor_slices(["xyz"]))
 load_vectorizer.set_weights(from_disk['weights'])
 
-def get_gpt_response(logs):
-    # https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
-    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed, our systems predict that FMC-1 might fail, unless a corrective action is taken. For more details contact TAC support.'
 
+def preprocess_logs(logs):
+  return logs[0:5000]
+
+
+def get_gpt_response(logs):
+    response = openai.Completion.create(model="text-davinci-003",
+                                        prompt=preprocess_logs(logs),
+                                        temperature=1,
+                                        max_tokens=128,
+                                        top_p=0.05,
+                                        frequency_penalty=0.3,
+                                        presence_penalty=0.3,
+                                        best_of=10)
+    # https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
+    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed, here are the following issues: ' + response.choices[0].text.split('\tat')[0]
 def predict_log_data():
     threshold = 0.999998
     logs = get_device_logs()
@@ -51,7 +67,7 @@ max_bytes_to_read = 11 * 1024
 
 def get_device_logs():
     # Sentiment score: 0.9999938
-    with open('dataset/train/critical/00383702.txt') as f:
+    with open('input_log.txt') as f:
         return f.read(max_bytes_to_read)
 
 # start the flask app, allow remote connections
