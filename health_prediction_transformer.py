@@ -10,6 +10,7 @@ Original file is located at
 from keras.layers import TextVectorization
 from tensorflow import keras
 from keras import layers
+import pickle
 
 from embedding import PositionalEmbedding
 from transform import TransformerEncoder
@@ -68,6 +69,9 @@ vocab = text_vectorization.get_vocabulary()
 with open("vocab.txt", 'w') as f:
     f.write(str(vocab))
     f.close()
+
+pickle.dump({'config': text_vectorization.get_config(),
+             'weights': text_vectorization.get_weights()}, open("tv_layer.pkl", "wb"))
 
 
 max_length = 600

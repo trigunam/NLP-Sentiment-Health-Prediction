@@ -6,6 +6,8 @@ import tensorflow as tf
 from keras.layers import TextVectorization
 from keras.models import load_model
 
+from datetime import datetime
+
 from embedding import PositionalEmbedding
 from transform import TransformerEncoder
 
@@ -17,7 +19,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route("/predict", methods=["GET"])
 @cross_origin()
 def predict():
-    data = {"success": True, 'prediction': executePrediction()}
+    data = {"success": True, 'prediction': predict_log_data()}
     return flask.jsonify(data)
 
 with open('tv_layer.pkl', 'rb') as tv_file:
@@ -26,20 +28,21 @@ load_vectorizer = TextVectorization.from_config(from_disk['config'])
 load_vectorizer.adapt(tf.data.Dataset.from_tensor_slices(["xyz"]))
 load_vectorizer.set_weights(from_disk['weights'])
 
-def getGPTResponseData(logs):
-    return '🚨Alert!! Based on the recent health checkup, the Cd-FMC is having trouble connecting to other devices, '
+def get_gpt_response(logs):
+    # https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
+    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed on your device, our systems predict that FMC-1 might fail, unless a corrective action is taken. For more details contact TAC support.'
 
-def executePrediction():
+def predict_log_data():
     threshold = 0.999998
     logs = get_device_logs()
     # load the model, and pass in the custom metric function
-    model = load_model('senti.h5', custom_objects={
+    model = load_model('fmc.h5', custom_objects={
         'PositionalEmbedding': PositionalEmbedding,
         'TransformerEncoder': TransformerEncoder})
     sentiment_score = model.predict(load_vectorizer([logs]))
-    if sentiment_score < threshold:
+    if sentiment_score > threshold:
         return '✅Cd-FMC health check-up completed. No issues found'
-    return getGPTResponseData(logs)
+    return get_gpt_response(logs)
 
 
 # Max 11 KB can be provided to predict
