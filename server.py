@@ -31,7 +31,7 @@ def getGPTResponseData(logs):
 
 def executePrediction():
     threshold = 0.999998
-    logs = getDeviceLogs()
+    logs = get_device_logs()
     # load the model, and pass in the custom metric function
     model = load_model('senti.h5', custom_objects={
         'PositionalEmbedding': PositionalEmbedding,
@@ -41,7 +41,15 @@ def executePrediction():
         return '✅Cd-FMC health check-up completed. No issues found'
     return getGPTResponseData(logs)
 
-def getDeviceLogs():
-    return "I first saw this back in the early 90s on UK TV, i did like it then but i missed the chance to tape it, many years passed but the film always stuck with me and i lost hope of seeing it TV again, the main thing that stuck with me was the end, the hole castle part really touched me, its easy to watch, has a great story, great music, the list goes on and on, its OK me saying how good it is but everyone will take there own best bits away with them once they have seen it, yes the animation is top notch and beautiful to watch, it does show its age in a very few parts but that has now become part of it beauty, i am so glad it has came out on DVD as it is one of my top 10 films of all time. Buy it or rent it just see it, best viewing is at night alone with drink and food in reach so you don't have to stop the film.<br /><br />Enjoy"
+
+# Max 11 KB can be provided to predict
+max_bytes_to_read = 11 * 1024
+
+
+def get_device_logs():
+    # Sentiment score: 0.9999938
+    with open('dataset/train/critical/00383702.txt') as f:
+        return f.read(max_bytes_to_read)
+
 # start the flask app, allow remote connections
 app.run(host='0.0.0.0', port=5500)
