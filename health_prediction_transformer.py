@@ -70,10 +70,6 @@ with open("vocab.txt", 'w') as f:
     f.write(str(vocab))
     f.close()
 
-pickle.dump({'config': text_vectorization.get_config(),
-             'weights': text_vectorization.get_weights()}, open("tv_layer.pkl", "wb"))
-
-
 max_length = 600
 max_tokens = 20000
 text_vectorization = layers.TextVectorization(
@@ -126,15 +122,18 @@ callbacks = [
     keras.callbacks.ModelCheckpoint("full_transformer_encoder.keras",
                                     save_best_only=True)
 ]
-model.fit(int_train_ds, validation_data=int_val_ds,
-          epochs=20, callbacks=callbacks)
-model = keras.models.load_model(
-    "full_transformer_encoder.keras",
-    custom_objects={"TransformerEncoder": TransformerEncoder,
-                    "PositionalEmbedding": PositionalEmbedding})
+# model.fit(int_train_ds, validation_data=int_val_ds,
+#           epochs=20, callbacks=callbacks)
+# model = keras.models.load_model(
+#     "full_transformer_encoder.keras",
+#     custom_objects={"TransformerEncoder": TransformerEncoder,
+#                     "PositionalEmbedding": PositionalEmbedding})
 print(f"Test acc: {model.evaluate(int_test_ds)[1]:.3f}")
 
 model.save("fmc.h5")
+pickle.dump({'config': text_vectorization.get_config(),
+             'weights': text_vectorization.get_weights()}
+            , open("tv_layer.pkl", "wb"))
 
 print("Predicting accuracy in % {}".format(
     model.predict(text_vectorization(["I first saw this back in the early 90s on UK TV"]))))
