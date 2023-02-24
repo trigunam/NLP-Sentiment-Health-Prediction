@@ -47,7 +47,8 @@ def get_gpt_response(logs):
                                         presence_penalty=0.3,
                                         best_of=10)
     # https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
-    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed, here are the following issues: ' + response.choices[0].text.split('\tat')[0]
+    return datetime.now().strftime('%d-%b-%Y %I:%M:%S') + ' => 🚨 FMC-1 might be unstable!. Based on the recent periodic health check performed, identified issue as: ' + response.choices[0].text.split('\tat')[0]
+
 def predict_log_data():
     threshold = 0.999998
     logs = get_device_logs()
